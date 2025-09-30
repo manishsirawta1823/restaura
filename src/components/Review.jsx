@@ -1,5 +1,10 @@
 ﻿import React from 'react'
 import { motion } from 'framer-motion'
+import user from '../assets/images/user.jpeg'
+import customer1 from '../assets/images/gallery/customer.jpeg'
+import customer2 from '../assets/images/gallery/customer1.jpeg'
+import customer3 from '../assets/images/gallery/customer2.jpeg'
+import customer4 from '../assets/images/gallery/customer3.jpeg'
 
 const Review = () => {
     // Animation variants for the main quote
@@ -111,7 +116,7 @@ const Review = () => {
                             transition={{ duration: 0.6, delay: 0.7 }}
                             viewport={{ once: true }}
                         >
-                            <img src="/src/assets/images/user.jpeg" alt="user" className='w-16 md:w-20 rounded-full border-1 border-white' />
+                            <img src={user} alt="user" className='w-16 md:w-20 rounded-full border-1 border-white' />
                         </motion.div>
                         <motion.div
                             className="text"
@@ -139,7 +144,7 @@ const Review = () => {
                             style={{ perspective: "1000px" }}
                         >
                             <motion.img
-                                src="/src/assets/images/gallery/customer.jpeg"
+                                src={customer1}
                                 alt="customer1"
                                 className='h-[90%] md:h-[260px] rounded-tl-3xl rounded-br-3xl shadow-lg object-cover'
                                 whileHover={{ scale: 1.02 }}
@@ -153,7 +158,7 @@ const Review = () => {
                             style={{ perspective: "1000px" }}
                         >
                             <motion.img
-                                src="/src/assets/images/gallery/customer1.jpeg"
+                                src={customer2}
                                 alt="customer2"
                                 className='h-[90%] md:h-[260px] rounded-tl-3xl rounded-br-3xl shadow-lg object-cover'
                                 whileHover={{ scale: 1.02 }}
@@ -167,7 +172,7 @@ const Review = () => {
                             style={{ perspective: "1000px" }}
                         >
                             <motion.img
-                                src="/src/assets/images/gallery/customer2.jpeg"
+                                src={customer3}
                                 alt="customer3"
                                 className='h-[90%] md:h-[260px] rounded-tl-3xl rounded-br-3xl shadow-lg object-cover'
                                 whileHover={{ scale: 1.02 }}
@@ -181,7 +186,7 @@ const Review = () => {
                             style={{ perspective: "1000px" }}
                         >
                             <motion.img
-                                src="/src/assets/images/gallery/customer3.jpeg"
+                                src={customer4}
                                 alt="customer4"
                                 className='h-[90%] md:h-[260px] rounded-tl-3xl rounded-br-3xl shadow-lg object-cover'
                                 whileHover={{ scale: 1.02 }}

@@ -1,4 +1,5 @@
-import React from 'react'
+import hero from '../assets/videos/hero-video.mp4'
+import hero_poster from '../assets/images/hero.jpg'
 
 const Hero = () => {
     return (
@@ -10,9 +11,9 @@ const Hero = () => {
                     autoPlay
                     loop
                     muted
-                    poster="/src/assets/images/hero.jpg"
+                    poster={hero_poster}
                 >
-                    <source src="/src/assets/videos/hero-video.mp4" type="video/mp4" />
+                    <source src={hero} type="video/mp4" />
                 </video>
 
                 <div className="text-content absolute top-1/2 md:top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full px-4">
