@@ -1,4 +1,5 @@
 import React from 'react'
+import about from "/src/assets/images/about.jpeg"
 
 const About = () => {
     return (
@@ -10,7 +11,7 @@ const About = () => {
 
                 <div className="about-content flex flex-col md:flex-row w-full">
                     <div className="card lg:w-1/2">
-                        <img src="/src/assets/images/about.jpeg" alt="About Image" className='w-[720px] rounded-3xl transform -rotate-3' />
+                        <img src={about} alt="About Image" className='w-[720px] rounded-3xl transform -rotate-3' />
                     </div>
 
                     <div className="about-text lg:w-1/2 mt-20 lg:mt-0">
