@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from '../assets/images/logo.png'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
         {/* ------------------- Logo ------------------ */}
         <div className="logo">
           <a href="#home">
-            <img src="/src/assets/images/logo.png" alt="logo" className="w-20" />
+            <img src={logo} alt="logo" className="w-20" />
           </a>
         </div>
 
