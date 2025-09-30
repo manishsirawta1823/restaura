@@ -7,10 +7,11 @@ const Hero = () => {
             <div className="hero-content relative w-full h-screen">
                 <video
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-[90%] object-cover"
                     autoPlay
                     loop
                     muted
+                    playsInline
                     poster={hero_poster}
                 >
                     <source src={hero} type="video/mp4" />
