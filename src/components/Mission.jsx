@@ -1,5 +1,4 @@
 import mission from '../assets/videos/mission.mp4'
-import mission_poster from '../assets/mission-C6eZPkls.jpeg'
 
 const Mission = () => {
     return (
@@ -11,7 +10,7 @@ const Mission = () => {
 
                 <div className="mission-content relative">
                     <div className="card">
-                        <video loading="lazy" className="w-full rounded-3xl opacity-50" autoPlay loop muted poster={mission_poster}>
+                        <video loading="lazy" className="w-full rounded-3xl opacity-50" autoPlay loop muted playsInline>
                             <source src={mission} type="video/mp4" />
                         </video>
                     </div>
